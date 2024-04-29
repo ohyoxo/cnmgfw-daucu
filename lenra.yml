@@ -9,7 +9,8 @@ generator:
     workdir: /app
     root:
       run:
-        - pip3 install requests
+        - chmod +x app.py
+        - pip install -r requirements.txt
     cmd:
-      - python3
+      - python
       - app.py
